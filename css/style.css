@@ -1,0 +1,263 @@
+/* =========================================================
+   AD Lab Hospital — custom styles on top of Bootstrap 5
+   ========================================================= */
+
+:root {
+  --adl-primary: #0b6e99;
+  --adl-primary-dark: #075170;
+  --adl-accent: #17b8a6;
+  --adl-ink: #12212b;
+  --adl-muted: #5b6b76;
+}
+
+/* Bootstrap theme overrides */
+.bg-primary {
+  background-color: var(--adl-primary) !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--adl-primary);
+  --bs-btn-border-color: var(--adl-primary);
+  --bs-btn-hover-bg: var(--adl-primary-dark);
+  --bs-btn-hover-border-color: var(--adl-primary-dark);
+  --bs-btn-active-bg: var(--adl-primary-dark);
+  --bs-btn-active-border-color: var(--adl-primary-dark);
+}
+
+.text-primary {
+  color: var(--adl-primary) !important;
+}
+
+.bg-primary-subtle {
+  background-color: #e3f3f9 !important;
+}
+
+.text-primary-emphasis {
+  color: var(--adl-primary-dark) !important;
+}
+
+.bg-success-subtle {
+  background-color: #dff5ec !important;
+}
+
+body {
+  scroll-behavior: smooth;
+  color: var(--adl-ink);
+}
+
+.section-sub {
+  max-width: 620px;
+}
+
+.letter-spaced {
+  letter-spacing: 0.12em;
+}
+
+/* ============================ Navbar ============================ */
+.navbar-brand {
+  font-size: 1.15rem;
+  letter-spacing: 0.01rem;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 1.05rem;
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 500;
+  padding-inline: 0.85rem !important;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0.35rem;
+  height: 2px;
+  border-radius: 2px;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* ============================ Hero ============================ */
+.hero {
+  position: relative;
+  background-color: var(--adl-primary);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(23, 184, 166, 0.55), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(9, 38, 56, 0.65), transparent 50%),
+    linear-gradient(135deg, var(--adl-primary) 0%, var(--adl-primary-dark) 100%);
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M0 60h120M60 0v120' stroke='%23ffffff' stroke-opacity='0.055' stroke-width='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-card {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.stat {
+  padding: 0.35rem 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+/* ============================ Services ============================ */
+.service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2.5rem rgba(11, 110, 153, 0.16) !important;
+}
+
+.service-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #e3f3f9;
+  color: var(--adl-primary);
+  font-size: 1.6rem;
+}
+
+/* ============================ Doctors ============================ */
+.doctor-card {
+  border-radius: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2.5rem rgba(11, 110, 153, 0.16) !important;
+}
+
+.doctor-avatar {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--adl-primary), var(--adl-accent));
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  box-shadow: 0 0.5rem 1.25rem rgba(11, 110, 153, 0.28);
+}
+
+/* ============================ Appointment ============================ */
+.appointment-info {
+  background: linear-gradient(160deg, var(--adl-primary) 0%, var(--adl-primary-dark) 100%);
+}
+
+#appointment .form-control,
+#appointment .form-select {
+  border-radius: 0.6rem;
+  padding-block: 0.65rem;
+}
+
+#appointment .form-control:focus,
+#appointment .form-select:focus {
+  border-color: var(--adl-primary);
+  box-shadow: 0 0 0 0.2rem rgba(11, 110, 153, 0.18);
+}
+
+/* ============================ Footer ============================ */
+.footer {
+  background: #0d2230;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.social-link {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  background: var(--adl-accent);
+  color: #06222c;
+  transform: translateY(-2px);
+}
+
+/* ============================ Accessibility ============================ */
+a:focus-visible,
+button:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+  outline: 3px solid var(--adl-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================ Small screens ============================ */
+@media (max-width: 991.98px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero .d-flex.flex-sm-row {
+    justify-content: center;
+  }
+
+  .stat {
+    border-left: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .navbar .nav-link::after {
+    display: none;
+  }
+}

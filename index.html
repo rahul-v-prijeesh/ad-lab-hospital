@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AD Lab Hospital — Care You Can Trust</title>
+  <meta name="description" content="AD Lab Hospital — multi-speciality care with experienced doctors, modern diagnostics and easy online appointment booking." />
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#home">
+        <span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span>
+        AD Lab <span class="fw-light">Hospital</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-light text-primary fw-semibold px-3" href="#appointment">
+              <i class="bi bi-calendar2-check me-1"></i>Book Now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="home" class="hero text-white">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-7">
+          <span class="badge rounded-pill bg-light text-primary mb-3 px-3 py-2">
+            <i class="bi bi-shield-check me-1"></i> 24×7 Emergency Care
+          </span>
+          <h1 class="display-4 fw-bold lh-sm mb-3">
+            Compassionate care,<br />advanced medicine.
+          </h1>
+          <p class="lead opacity-75 mb-4">
+            AD Lab Hospital brings together experienced specialists, modern diagnostics
+            and patient-first service — all under one roof.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="#appointment" class="btn btn-light btn-lg text-primary fw-semibold">
+              <i class="bi bi-calendar2-plus me-2"></i>Book an Appointment
+            </a>
+            <a href="tel:+911234567890" class="btn btn-outline-light btn-lg">
+              <i class="bi bi-telephone me-2"></i>+91 12345 67890
+            </a>
+          </div>
+
+          <div class="row row-cols-2 row-cols-md-3 g-3 mt-5 text-center">
+            <div class="col">
+              <div class="stat">
+                <div class="h3 fw-bold mb-0">25+</div>
+                <div class="small opacity-75">Specialists</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="stat">
+                <div class="h3 fw-bold mb-0">50k+</div>
+                <div class="small opacity-75">Patients Treated</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="stat">
+                <div class="h3 fw-bold mb-0">15</div>
+                <div class="small opacity-75">Years of Service</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="hero-card bg-white text-dark rounded-4 shadow-lg p-4">
+            <h2 class="h5 fw-bold mb-3"><i class="bi bi-clock-history text-primary me-2"></i>Today at a Glance</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>Emergency &amp; Trauma</span><span class="badge bg-success-subtle text-success-emphasis">Open</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>OPD Consultation</span><span class="text-muted small">8:00 AM – 8:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>Diagnostics Lab</span><span class="text-muted small">7:00 AM – 9:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between py-2">
+                <span>Pharmacy</span><span class="badge bg-success-subtle text-success-emphasis">Open</span>
+              </li>
+            </ul>
+            <div class="alert alert-primary small mb-0 mt-3">
+              <i class="bi bi-info-circle me-1"></i>
+              Walk-ins welcome. Booking online reduces your wait time.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-semibold text-uppercase small letter-spaced">What we offer</span>
+        <h2 class="fw-bold mt-2">Our Hospital Services</h2>
+        <p class="text-muted mx-auto section-sub">
+          Comprehensive care across specialities, backed by modern equipment and a team that listens.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3"><i class="bi bi-heart-pulse"></i></div>
+              <h3 class="h5 fw-bold">Cardiology</h3>
+              <p class="text-muted mb-0">
+                ECG, echo, stress testing and specialist heart care for every stage of life.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3"><i class="bi bi-bandaid"></i></div>
+              <h3 class="h5 fw-bold">Emergency &amp; Trauma</h3>
+              <p class="text-muted mb-0">
+                Round-the-clock emergency team with rapid triage and ambulance support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3"><i class="bi bi-clipboard2-pulse"></i></div>
+              <h3 class="h5 fw-bold">Diagnostics &amp; Lab</h3>
+              <p class="text-muted mb-0">
+                Blood work, imaging and pathology with same-day reports for most tests.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3"><i class="bi bi-activity"></i></div>
+              <h3 class="h5 fw-bold">Orthopaedics</h3>
+              <p class="text-muted mb-0">
+                Joint care, fracture treatment and physiotherapy-led rehabilitation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3"><i class="bi bi-people"></i></div>
+              <h3 class="h5 fw-bold">Pediatrics</h3>
+              <p class="text-muted mb-0">
+                Gentle, child-friendly care from newborn checkups to adolescent health.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3"><i class="bi bi-capsule"></i></div>
+              <h3 class="h5 fw-bold">Pharmacy</h3>
+              <p class="text-muted mb-0">
+                In-house pharmacy with prescription support and home delivery options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DOCTORS ================= -->
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-semibold text-uppercase small letter-spaced">Meet the team</span>
+        <h2 class="fw-bold mt-2">Our Doctors</h2>
+        <p class="text-muted mx-auto section-sub">
+          Specialists who combine clinical expertise with a genuinely human approach.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card doctor-card h-100 border-0 shadow-sm text-center">
+            <div class="doctor-avatar mx-auto mt-4">
+              <span>AR</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1">Dr. Ananya Rao</h3>
+              <p class="text-primary small fw-semibold mb-2">Cardiologist</p>
+              <p class="text-muted small mb-3">MD, DM (Cardiology) · 12 yrs experience</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <span class="badge bg-primary-subtle text-primary-emphasis">Heart Care</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">ECG</span>
+              </div>
+              <a href="#appointment" class="btn btn-outline-primary btn-sm w-100 book-doctor" data-doctor="Dr. Ananya Rao">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card doctor-card h-100 border-0 shadow-sm text-center">
+            <div class="doctor-avatar mx-auto mt-4">
+              <span>SM</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1">Dr. Sameer Menon</h3>
+              <p class="text-primary small fw-semibold mb-2">Orthopaedic Surgeon</p>
+              <p class="text-muted small mb-3">MS (Ortho) · 10 yrs experience</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <span class="badge bg-primary-subtle text-primary-emphasis">Joint Care</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">Trauma</span>
+              </div>
+              <a href="#appointment" class="btn btn-outline-primary btn-sm w-100 book-doctor" data-doctor="Dr. Sameer Menon">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card doctor-card h-100 border-0 shadow-sm text-center">
+            <div class="doctor-avatar mx-auto mt-4">
+              <span>PK</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1">Dr. Priya Kapoor</h3>
+              <p class="text-primary small fw-semibold mb-2">Pediatrician</p>
+              <p class="text-muted small mb-3">MD (Pediatrics) · 9 yrs experience</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <span class="badge bg-primary-subtle text-primary-emphasis">Child Health</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">Vaccines</span>
+              </div>
+              <a href="#appointment" class="btn btn-outline-primary btn-sm w-100 book-doctor" data-doctor="Dr. Priya Kapoor">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card doctor-card h-100 border-0 shadow-sm text-center">
+            <div class="doctor-avatar mx-auto mt-4">
+              <span>RV</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1">Dr. Rahul Verma</h3>
+              <p class="text-primary small fw-semibold mb-2">General Physician</p>
+              <p class="text-muted small mb-3">MBBS, MD (Internal Medicine) · 14 yrs</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <span class="badge bg-primary-subtle text-primary-emphasis">General</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">Diabetes</span>
+              </div>
+              <a href="#appointment" class="btn btn-outline-primary btn-sm w-100 book-doctor" data-doctor="Dr. Rahul Verma">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= APPOINTMENT ================= -->
+  <section id="appointment" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="appointment-info h-100 rounded-4 p-4 p-lg-5 text-white">
+            <h2 class="h3 fw-bold mb-3">Book Your Visit</h2>
+            <p class="opacity-75">
+              Fill in the form and we will confirm your slot by phone or email within a few hours.
+            </p>
+
+            <ul class="list-unstyled mt-4 mb-0">
+              <li class="d-flex gap-3 mb-3">
+                <i class="bi bi-clock fs-5"></i>
+                <div>
+                  <div class="fw-semibold">OPD Hours</div>
+                  <div class="small opacity-75">Mon – Sat, 8:00 AM – 8:00 PM</div>
+                </div>
+              </li>
+              <li class="d-flex gap-3 mb-3">
+                <i class="bi bi-telephone fs-5"></i>
+                <div>
+                  <div class="fw-semibold">Call Us</div>
+                  <div class="small opacity-75">+91 12345 67890</div>
+                </div>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-geo-alt fs-5"></i>
+                <div>
+                  <div class="fw-semibold">Location</div>
+                  <div class="small opacity-75">MG Road, Kochi, Kerala 682016</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm rounded-4 h-100">
+            <div class="card-body p-4 p-lg-5">
+              <h3 class="h4 fw-bold mb-1">Appointment Request</h3>
+              <p class="text-muted small mb-4">Fields marked with <span class="text-danger">*</span> are required.</p>
+
+              <form id="appointmentForm" class="row g-3" novalidate>
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your full name" required />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="10-digit mobile number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                  />
+                  <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" />
+                  <div class="invalid-feedback">Enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="department" class="form-label">Department <span class="text-danger">*</span></label>
+                  <select class="form-select" id="department" name="department" required>
+                    <option value="" selected disabled>Choose a department</option>
+                    <option>General Medicine</option>
+                    <option>Cardiology</option>
+                    <option>Orthopaedics</option>
+                    <option>Pediatrics</option>
+                    <option>Diagnostics</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a department.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="doctor" class="form-label">Preferred Doctor</label>
+                  <select class="form-select" id="doctor" name="doctor">
+                    <option value="">Any available doctor</option>
+                    <option>Dr. Ananya Rao</option>
+                    <option>Dr. Sameer Menon</option>
+                    <option>Dr. Priya Kapoor</option>
+                    <option>Dr. Rahul Verma</option>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="date" class="form-label">Date <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="date" name="date" required />
+                  <div class="invalid-feedback">Choose a date.</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="time" class="form-label">Time <span class="text-danger">*</span></label>
+                  <input type="time" class="form-control" id="time" name="time" min="08:00" max="20:00" required />
+                  <div class="invalid-feedback">Choose a time between 8 AM and 8 PM.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Reason for Visit / Symptoms</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    placeholder="Briefly describe your concern (optional)"
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="consent" name="consent" required />
+                    <label class="form-check-label small" for="consent">
+                      I agree to be contacted about my appointment. <span class="text-danger">*</span>
+                    </label>
+                    <div class="invalid-feedback">Please accept to continue.</div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex flex-column flex-sm-row gap-2 pt-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4">
+                    <i class="bi bi-calendar2-check me-2"></i>Request Appointment
+                  </button>
+                  <button type="reset" class="btn btn-outline-secondary btn-lg px-4">
+                    <i class="bi bi-arrow-counterclockwise me-2"></i>Reset
+                  </button>
+                </div>
+              </form>
+
+              <div id="formAlert" class="mt-4" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT / FOOTER ================= -->
+  <footer id="contact" class="footer text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h2 class="h5 fw-bold d-flex align-items-center gap-2">
+            <span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span>
+            AD Lab Hospital
+          </h2>
+          <p class="opacity-75 small mb-3">
+            Patient-first healthcare with experienced specialists and modern facilities.
+            Emergency care available 24×7.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3 class="h6 fw-bold text-uppercase small letter-spaced mb-3">Explore</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#home" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="#services" class="footer-link">Services</a></li>
+            <li class="mb-2"><a href="#doctors" class="footer-link">Doctors</a></li>
+            <li class="mb-2"><a href="#appointment" class="footer-link">Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3 class="h6 fw-bold text-uppercase small letter-spaced mb-3">Contact</h3>
+          <ul class="list-unstyled small opacity-75">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>MG Road, Kochi, Kerala 682016</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i>+91 12345 67890</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i>care@adlabhospital.com</li>
+            <li class="mb-2"><i class="bi bi-clock me-2"></i>Emergency: 24×7</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="h6 fw-bold text-uppercase small letter-spaced mb-3">Emergency?</h3>
+          <p class="small opacity-75">Our emergency desk is always open. Call us immediately.</p>
+          <a href="tel:+911234567890" class="btn btn-danger w-100 fw-semibold">
+            <i class="bi bi-telephone-fill me-2"></i>Call Emergency
+          </a>
+        </div>
+      </div>
+
+      <hr class="border-light opacity-25 my-4" />
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small opacity-75">
+        <span>&copy; <span id="year"></span> AD Lab Hospital. All rights reserved.</span>
+        <span>This is a demo project. Not for real medical use.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast for feedback -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="apptToast" class="toast align-items-center text-bg-success border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="bi bi-check-circle me-2"></i>Appointment request saved locally.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
